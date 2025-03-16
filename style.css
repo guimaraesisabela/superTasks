@@ -1,64 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(40, 39, 39);
-    font-family: arial;
-}
-
-ul li {
-    color: white;
-    text-align: left;
-    list-style-type: none;
-}
-
-.item2 {
-    text-decoration: line-through;
-    border: 2px solid rgb(56, 83, 252);
-    background-color: rgba(39, 125, 245, 0.304);
-    padding: 12px;
-}
- 
-.item1 {
-border: 2px solid none;
-background-color: rgb(66, 65, 65);
-padding: 12px;
-}
-
-.item3 {
-border: 2px solid none;
-background-color: rgb(66, 65, 65);
-padding: 12px;
-}
-
-.item4 {
-border: 2px solid none;
-background-color: rgb(66, 65, 65);
-padding: 12px;
-}
-
-h3 {
-margin-left: 372px;
-color: white;
-}
-
-h1 {
-    text-align: center;
-    color: white;
-}
-
-h6 {
-    text-align: center;
-    color: rgb(158, 155, 155);
-    border: 2px dashed white;
-    padding: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     width: 600px;
-    margin: 0 auto;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.item {
+    color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.item:hover {
+    background-color: rgba(39, 125, 245, 0.2);
+}
+
+.item1 {
+    background-color: rgb(66, 65, 65);
+    border: 2px solid rgb(66, 65, 65);
+}
+
+.item2 {
+    text-decoration: line-through;
+    background-color: rgba(39, 125, 245, 0.3);
+    border: 2px solid rgb(56, 83, 252);
+}
+
+.item3,
+.item4 {
+    background-color: rgb(66, 65, 65);
+    border: 2px solid rgb(66, 65, 65);
 }
 
 .copyright {
-    margin-left: 40px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-
-
+h6 {
+    color: rgb(158, 155, 155);
+    border-top: 2px dashed white;
+    padding-top: 10px;
+}
+.item.completed {
+    text-decoration: line-through;
+    background-color: rgba(39, 125, 245, 0.5);
+    color: #bbb;
+}
